@@ -1,4 +1,4 @@
-#this is to use
+#this is to use bubble
 def minimumBribes(queue):
     lastIndex = len(queue) - 1
     swaps = 0
