@@ -1,4 +1,4 @@
-#this
+#this is to use
 def minimumBribes(queue):
     lastIndex = len(queue) - 1
     swaps = 0
