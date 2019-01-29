@@ -1,4 +1,4 @@
 # hackerrank
 hackerrank challenges
 sorting
--fradulent activity, bubble sor
+-fradulent activity, bubble sort
