@@ -18,6 +18,7 @@ def solution(participant, completion):
             return participant[i]
     return participant[-1]
     '''
+#testing
 participant = ['marina', 'josipa', 'nikola', 'vinko', 'filipa']
 completion = ['josipa', 'filipa', 'marina', 'nikola']
 
