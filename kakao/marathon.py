@@ -9,16 +9,8 @@ def solution(participant, completion):
     
     #this taking too much time
     '''
-    participant = sorted(participant)
-    completion = sorted(completion)
-    for i in range(len(participant)-1):
-        if participant[i] == completion[i]:
-            continue
-        else:
-            return participant[i]
-    return participant[-1]
+    w
     '''
-#testing
 participant = ['marina', 'josipa', 'nikola', 'vinko', 'filipa']
 completion = ['josipa', 'filipa', 'marina', 'nikola']
 
@@ -37,4 +29,8 @@ print(t2-t1)
 
 #original records
 '''
+7.796287536621094e-05
+6.389617919921875e-05
+5.2928924560546875e-05
+5.1975250244140625e-05
 '''
