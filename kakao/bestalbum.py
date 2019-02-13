@@ -1,4 +1,3 @@
-
 from operator import itemgetter
 def solution(genres, plays):
     answer = []
@@ -18,13 +17,15 @@ def solution(genres, plays):
     a = list(hash_dict.values())
     a.sort(key=itemgetter(0), reverse=True)
     ret_list = []
-    #이 부분에서 에러가 나는거같습니다.
     for i in a:
         i.pop(0)
         i.sort(key=itemgetter(0), reverse=True)
         while_counter = 0
-        while while_counter < 2:
-            ret_list.append(i[while_counter][1])
-            while_counter += 1
+        if len(i) == 1:
+            ret_list.append(i[0][1])
+        else:
+            while while_counter < 2:
+                ret_list.append(i[while_counter][1])
+                while_counter += 1
     #hash_dict => 'classic':(1450,(1,500),(2))
     return ret_list
