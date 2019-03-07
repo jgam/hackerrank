@@ -15,7 +15,7 @@ def substrCount(n, s):
     char_dict =[]
     prev_char = ''
     char_count = 0
-    #first case
+    #to meet the two cases, I am preprocessing the data
     ret = 0
     for character in s:
         if character == prev_char:
@@ -30,9 +30,13 @@ def substrCount(n, s):
                 prev_char = character
                 char_count = 1
     char_dict.append((prev_char, char_count))
+    #up to here, we have a list of sets that contain character followed by its number of occurrences\
 
     for index in range(len(char_dict)):
+        #here is the first case
         ret += char_dict[index][1]/2*(char_dict[index][1]+1)
+        #second case : compare three sets at once while the middle one being 1 and add min number of
+        # number of occurrences of first and last set.
         try:
             different_char = char_dict[index+1][0]
             different_count = char_dict[index+1][1]
